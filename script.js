@@ -50,12 +50,12 @@ function playRound(humanChoice, computerChoice) {
     playerPlay.innerText = humanChoice;
     computerPlay.innerText = computerChoice;
     if (humanChoice === computerChoice) {
-        roundResult.innerText = `It's a draw! ${humanChoice} ties with ${computerChoice}.`;
+        roundResult.innerText = `It's a draw! ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} ties with ${computerChoice}.`;
     } else if (winningOptions[humanChoice] === computerChoice) {
-        roundResult.innerText = `You win! ${humanChoice} beats ${computerChoice}.`;
+        roundResult.innerText = `You win! ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} beats ${computerChoice}.`;
         playerScoreElement.innerText = ++humanScore;
     } else {
-        roundResult.innerText = `You lose! ${computerChoice} beats ${humanChoice}.`;
+        roundResult.innerText = `You lose! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} beats ${humanChoice}.`;
         computerScoreElement.innerText = ++computerScore;
     }
 
