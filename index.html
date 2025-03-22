@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+<div class="header">
+    ROCK PAPER SCISSORS
+</div>
+<div class="content">
+    <div class="round-result">Click a button to make a move!</div>
+    <div class="info">
+        <div class="player-info">
+            <div class="player-move">You played - <span id="player-play">?</span></div>
+            <div class="player-score">Player score - <span id="player-score">0</span></div>
+        </div>
+        <div class="computer-info">
+            <div class="computer-move">The computer played - <span id="computer-play">?</span></div>
+            <div class="computer-score">Computer score - <span id="computer-score">0</span></div>
+        </div>
+    </div>
 
+    <div class="input-buttons">
+        <ul>
+            <li>
+                <button class="input" id="rock">Rock</button>
+            </li>
+            <li>
+                <button class="input" id="paper">Paper</button>
+            </li>
+            <li>
+                <button class="input" id="scissors">Scissors</button>
+            </li>
+        </ul>
+    </div>
+    <div class="game-result"></div>
+</div>
 </body>
 </html>
